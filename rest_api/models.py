@@ -19,6 +19,16 @@ class Project(models.Model):
     def __str__(self):
         return self.titleEn
 
-
+class HomePageTxts(models.Model):
+    about_text_it = models.TextField(default='Default about text in Italian')
+    about_text_en = models.TextField(default='Default about text in English')
+    about_text_es = models.TextField(default='Default about text in Spanish')
+    tech_text_it = models.TextField(default='Default tech text in Italian')
+    tech_text_en = models.TextField(default='Default tech text in English')
+    tech_text_es = models.TextField(default='Default tech text in Spanish')
+    partners_text_it = models.TextField(default='Default partners text in Italian')
+    partners_text_en = models.TextField(default='Default partners text in English')
+    partners_text_es = models.TextField(default='Default partners text in Spanish')
+    
 
 
